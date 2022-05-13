@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Effect Adder - Imagery</title>
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<script src="effect.js" defer></script>
+	</head>
+	<body>
+		<h1>Effect Adder</h1>
+		<main class="hidden"></main>
+		<div id="load">
+			<p>Load Image:</p>
+			<input type="text" id="file" placeholder="image link" />
+			<button onclick="imageLoaded()">Load</button>
+		</div>
+		<div id="content" class="hidden">
+			<div id="editor-shapes" class="flex">
+				<button class="shape" data-shape="threshold">Treshold</button>
+				<button class="shape" data-shape="gray">Gray</button>
+				<button class="shape" data-shape="invert">Invert</button>
+				<button class="shape" data-shape="posterize">Posterize</button>
+				<button class="shape" data-shape="blur">Blur</button>
+				<button class="shape" data-shape="erode">Erode</button>
+				<button class="shape" data-shape="dilate">Dilate</button>
+			</div>
+			<div id="editor-metadata" class="flex">
+				<input type="text" id="m-val" placeholder="value" />
+			</div>
+			<button onclick="reset()">Reset</button>
+			<button onclick="saveImage()">Save</button>
+		</div>
+	</body>
+</html>

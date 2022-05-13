@@ -1,0 +1,74 @@
+.flex {
+	display: flex;
+}
+
+body {
+	background: #0f172a;
+	color: #f1f5f9;
+	font-family: 'Roboto', sans-serif;
+}
+
+body:not(.no-center) {
+	display: grid;
+	place-items: center;
+}
+
+.hidden {
+	display: none;
+}
+
+#hero_buttons {
+	gap: 1rem;
+}
+
+button {
+	background-color: #475569;
+	border: none;
+	padding: 1rem;
+	color: #f1f5f9;
+	border-radius: 0.5rem;
+}
+
+#title {
+	font-size: 10rem;
+}
+
+#desc {
+	font-size: 2.5rem;
+	line-height: 1.5;
+}
+
+#editor-shapes,
+#editor-metadata,
+#editor-color {
+	margin-bottom: 1rem;
+	gap: 1rem;
+}
+
+input {
+	background-color: #475569;
+	border: none;
+	padding: 1rem;
+	color: #f1f5f9;
+	border-radius: 0.5rem;
+}
+
+input::-webkit-input-placeholder {
+	color: #cbd5e1;
+}
+
+input::-moz-placeholder {
+	color: #cbd5e1;
+}
+
+input:-ms-input-placeholder {
+	color: #cbd5e1;
+}
+
+input::-ms-input-placeholder {
+	color: #cbd5e1;
+}
+
+input::placeholder {
+	color: #cbd5e1;
+}
